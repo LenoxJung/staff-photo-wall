@@ -23,12 +23,25 @@ body {
 #team-members .member img {
   width: 200px;
   height: 200px;
+  border-radius: 50%;
+  border-style:solid;
+  border-color:black;
+  box-shadow: 10px 10px 5px grey;
+  -webkit-transition: all 1s;
 }
 
 #team-members .member div.name {
   text-align: center;  
 }
 
-#team-members .member img:hover {
+#team-members .member:nth-child(odd) img:hover {
   content: url("../images/avatar.png");
+  -webkit-transform: rotate(7deg) scale(1.1,1.1);
+  border-color:red;
+}
+
+#team-members .member:nth-child(even) img:active {
+  content: url("../images/avatar.png");
+  -webkit-transform: rotate(7deg) scale(1.1,1.1);
+  border-color:red;
 }
